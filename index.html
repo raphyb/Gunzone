@@ -710,7 +710,7 @@ function drawSoldier(x,y,ang,opts){
     cx.fillStyle='rgba(180,140,80,0.6)';cx.fill();
     // Camo dots on helmet
     const camoDots=team==='blue'?
-      [[sz*.18,-sz*1.2],[−sz*.22,-sz*1.18],[sz*.05,-sz*1.28],[-sz*.1,-sz*1.25]]:
+      [[sz*.18,-sz*1.2],[-sz*.22,-sz*1.18],[sz*.05,-sz*1.28],[-sz*.1,-sz*1.25]]:
       [[sz*.18,-sz*1.2],[-sz*.22,-sz*1.18],[sz*.05,-sz*1.28],[-sz*.1,-sz*1.25]];
     camoDots.forEach(([dx,dy])=>{
       cx.beginPath();cx.arc(dx,dy,sz*.07,0,Math.PI*2);
